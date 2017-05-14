@@ -1,0 +1,24 @@
+{
+  "name": "devtronic/call-user-func-assoc",
+  "description": "call_user_func_assoc PHP function",
+  "type": "library",
+  "license": "LGPL-3.0",
+  "authors": [
+    {
+      "name": "Julian Finkler",
+      "email": "julian@developer-heaven.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "files": [
+      "src/call_user_func_assoc.php"
+    ],
+    "psr-4": {
+      "Devtronic\\Tests\\CUFA\\": "tests"
+    }
+  }
+}
