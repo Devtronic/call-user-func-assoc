@@ -20,5 +20,8 @@
     "psr-4": {
       "Devtronic\\Tests\\CUFA\\": "tests"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
   }
 }
