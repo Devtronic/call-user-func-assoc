@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/devtronic/call-user-func-assoc.svg)](https://travis-ci.org/Devtronic/call-user-func-assoc)
+[![Travis](https://img.shields.io/travis/Devtronic/call-user-func-assoc.svg)](https://travis-ci.org/Devtronic/call-user-func-assoc)
 [![Packagist](https://img.shields.io/packagist/v/devtronic/call-user-func-assoc.svg)](https://packagist.org/packages/devtronic/call-user-func-assoc)
 [![GitHub license](https://img.shields.io/badge/license-LGPL3.0-blue.svg)](https://raw.githubusercontent.com/devtronic/call-user-func-assoc/master/LICENSE)
 [![Packagist](https://img.shields.io/packagist/dt/devtronic/call-user-func-assoc.svg)](https://packagist.org/packages/devtronic/call-user-func-assoc)
