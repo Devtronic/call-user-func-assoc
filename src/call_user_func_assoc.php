@@ -14,7 +14,10 @@
  *
  * @param string|array|object $function The function
  * @param array $paramArray The parameters
+ *
  * @return mixed The call result
+ *
+ * @throws ReflectionException
  */
 function call_user_func_assoc($function, $paramArray)
 {
@@ -23,15 +26,14 @@ function call_user_func_assoc($function, $paramArray)
     if (is_array($function)) {
         list($class, $name) = $function;
         $reflection = new ReflectionMethod($class, $name);
-    } else if (is_string($function)) {
-        $reflection = new ReflectionFunction($function);
-    } else if (is_callable($function)) {
+    } elseif (is_string($function) || is_callable($function)) {
         $reflection = new ReflectionFunction($function);
     }
 
     // Check if reflection is initialized
     if (is_null($reflection)) {
-        throw new \LogicException(sprintf('$function must be an instance of string, array or callable, %s given.', gettype($function)));
+        $msg = sprintf('$function must be an instance of string, array or callable, %s given.', gettype($function));
+        throw new \LogicException($msg);
     }
 
     // Rebuild the parameters array
